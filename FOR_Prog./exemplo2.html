@@ -1,18 +1,13 @@
 <meta charset="UTF-8">
 <script>
+    let valor = parseInt(prompt("Número Para Calculo da Tabuada:"));
+    let listaDeNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let tabuada = 0;
 
-let valor = parseInt(prompt("Número Para Calculo da Tabuada:"));
+    for (let numero of listaDeNumeros) {
+        tabuada = numero * valor;
 
-let listaDeNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-let tabuada = 0;
-
-for (let numero of listaDeNumeros) {
-    tabuada = numero * valor;
-
-    console.log(`${valor} x ${numero} = ${tabuada} <br>`);
-    document.write(`${valor} x ${numero} = ${tabuada} <br>`)
-    
-}
-
+        console.log(`${valor} x ${numero} = ${tabuada} <br>`);
+        document.write(`${valor} x ${numero} = ${tabuada} <br>`);
+    }
 </script>

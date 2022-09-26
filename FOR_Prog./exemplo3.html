@@ -1,16 +1,16 @@
+<meta charset="UTF-8">
 <script>
     let nomes = ["Alberto", "Maria", "Rafael", "Eloisa", "João", "Amanda", "Eduardo"];
     let nomesComecamComA = [];
     let demaisNomes = [];
 
-    for(nome of nomes) {
-        nome[0].charAt(0);
-        if(nome[0].charAt(0) === "A") {
-            nomesComecamComA.push(nome);
+    for (let nome of nomes) {
+        if (nome.charAt(0) === "A") {
+            console.log(nomesComecamComA.push(nome));
         }
-        else{
-            demaisNomes.push(nome);
+        else {
+            console.log(demaisNomes.push(nome));
         }
     }
-    document.write(`Nomes com A: ${nomesComecamComA} </br> Nomes Demais: ${demaisNomes}`);
+    document.write(`Nomes com A: <li> ${nomesComecamComA.sort().join(" - ")} </li> </br> Demais Nomes: <li> ${demaisNomes.sort().join(" - ")} </li>`);
 </script>

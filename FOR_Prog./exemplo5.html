@@ -1,0 +1,10 @@
+<meta charset="UTF-8">
+<script>
+    let listaDeNomes = [];
+    const perguntaFodaGames = parseInt(prompt("Quantos Nomes Chefia?"))
+    
+    for(contador = 1; contador <= perguntaFodaGames; contador++) {
+        listaDeNomes.push(prompt(`Nome Cria ${contador}:`));
+    }
+    document.write(listaDeNomes.join(" - "))
+</script>
