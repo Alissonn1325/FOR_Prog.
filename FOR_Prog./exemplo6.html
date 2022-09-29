@@ -2,4 +2,13 @@
 <script>
     const numeroCria = parseInt(prompt("Informe o número que deseja fatorar"))
     let resultado = 1;
+
+
+    for (let contador = 1; contador <= numeroCria; contador++) {
+        resultado = resultado * contador
+        document.write (resultado.join(" x "));
+    }
+
+    console.log(`O Fatorial de ${numeroCria} é ${resultado}`);
+    document.write(`O Fatorial de ${numeroCria} é ${resultado}`);
 </script>
